@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Fiver.Asp.SessionState
 {
     public class Startup
-    {
+    { 
         //public void ConfigureServices(
         //    IServiceCollection services)
         //{
@@ -20,7 +20,7 @@ namespace Fiver.Asp.SessionState
 
         public void ConfigureServices(
            IServiceCollection services)
-        {
+        { 
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {
@@ -53,7 +53,7 @@ namespace Fiver.Asp.SessionState
         public void Configure(
             IApplicationBuilder app,
             IHostingEnvironment env)
-        {
+        { 
             app.UseSession();
 
             app.Use(async (context, next) =>
